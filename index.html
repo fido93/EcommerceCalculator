@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assignment01</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <section>
+      <div class="container">
+        <h1 class="mb-3">Choose your account</h1>
+        <!-- Start Select Statement Account -->
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="form-group">
+              <select
+                class="form-control mb-5"
+                name="account_audience"
+                id="account_audience"
+              >
+                <option value="associate">Associate Account</option>
+                <option value="platinum">Platinum Account</option>
+                <option value="diamond">Diamond Account</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- End Select Statement Account -->
+        <!-- Start Product Listing -->
+        <div class="row mb-5">
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="./image/450x350.png"
+                class="card-img-top"
+                alt="product"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Kone</h3>
+                <h5>Per Price : RM 3488.99</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-8">
+            <div class="counter ml-auto">
+              <button class="btn btn-custom btn-default">-</button>
+              <input
+                type="text"
+                value="0"
+                id="kone_totalCounter"
+                class="form-control form_counter"
+              />
+              <button class="btn btn-custom btn-default">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="./image/450x350.png"
+                class="card-img-top"
+                alt="product"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Santa Cruz</h3>
+                <h5>Per Price : RM 185.50</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-8">
+            <div class="counter ml-auto">
+              <button class="btn btn-custom btn-default">-</button>
+              <input
+                type="text"
+                value="0"
+                id="santaCruz_totalCounter"
+                class="form-control form_counter"
+              />
+              <button class="btn btn-custom btn-default">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="./image/450x350.png"
+                class="card-img-top"
+                alt="product"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Fox + Float</h3>
+                <h5>Per Price : RM 66.00</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-8">
+            <div class="counter ml-auto">
+              <button class="btn btn-custom btn-default">-</button>
+              <input
+                type="text"
+                value="0"
+                id="foxfloat_totalCounter"
+                class="form-control form_counter"
+              />
+              <button class="btn btn-custom btn-default">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="./image/450x350.png"
+                class="card-img-top"
+                alt="product"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Ironhide</h3>
+                <h5>Per Price : RM 3299.99</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-8">
+            <div class="counter ml-auto">
+              <button class="btn btn-custom btn-default">-</button>
+              <input
+                type="text"
+                value="0"
+                id="ironhide_totalCounter"
+                class="form-control form_counter"
+              />
+              <button class="btn btn-custom btn-default">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="./image/450x350.png"
+                class="card-img-top"
+                alt="product"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Ironhide Cartridge</h3>
+                <h5>Per Price : RM 529.99</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-8">
+            <div class="counter ml-auto">
+              <button class="btn btn-custom btn-default">-</button>
+              <input
+                type="text"
+                value="0"
+                id="ironhideCartridge_totalCounter"
+                class="form-control form_counter"
+              />
+              <button class="btn btn-custom btn-default">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+            <div class="card" style="width: 18rem;">
+              <img
+                src="./image/450x350.png"
+                class="card-img-top"
+                alt="product"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Shimano + Derailleur</h3>
+                <h5>Per Price : RM 67.60</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-8">
+            <div class="counter ml-auto">
+              <button class="btn btn-custom btn-default">-</button>
+              <input
+                type="text"
+                value="0"
+                id="shimano_totalCounter"
+                class="form-control form_counter"
+              />
+              <button class="btn btn-custom btn-default">+</button>
+            </div>
+          </div>
+        </div>
+        <!-- End Product Listing -->
+        <!-- Start Result -->
+        <div class="row mt-4 mb-4">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <button class="btn btn-default btn-primary mb-4" id="btnResult">
+              Submit
+            </button>
+            <div class="result">
+              <h4>Result : <span class="resultStatus">RM 0.00</span></h4>
+            </div>
+          </div>
+        </div>
+        <!-- End Result -->
+      </div>
+    </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function() {
+        "use strict";
+
+        $(".form_counter").on("keyup", function(event) {
+          //regex dont accept text
+          $(this).val(
+            $(this)
+              .val()
+              .replace(/[^\d].+/, "")
+          );
+          if ($(this).val() >= 100) {
+            $(this).val("0");
+          }
+          if (event.which < 48 || event.which > 57) {
+            event.preventDefault();
+          }
+        });
+
+        $("#btnResult").on("click", function() {
+          const a = "";
+          selectAccount(a);
+          calculationProduct(selectAccount(a));
+          if (
+            calculationProduct(selectAccount(a)) === undefined ||
+            isNaN(calculationProduct(selectAccount(a))) ||
+            calculationProduct(selectAccount(a)) === 0
+          ) {
+            $(".resultStatus").text("RM 0.00 ");
+          } else {
+            $(".resultStatus").text(
+              "RM " +
+                parseFloat(calculationProduct(selectAccount(a))).toFixed(2)
+            );
+          }
+        });
+
+        //Account function define
+        function selectAccount(a) {
+          if (
+            $("#account_audience").val() === "associate" ||
+            $("#account_audience").val() === "platinum" ||
+            $("#account_audience").val() === "diamond"
+          ) {
+            return (a = $("#account_audience").val());
+          } else {
+            return false;
+          }
+        }
+
+        //Calculation Product
+
+        function discountThreeforTwoDeals(arrayDeal) {
+          let array = arrayDeal;
+          let TotalArray = array.filter(function(el, index) {
+            return index % 3 === 2;
+          });
+          return TotalArray.length;
+        }
+
+        function discountFiveforFourDeals(arrayDeal) {
+          let array = arrayDeal;
+          let TotalArray = array.filter(function(el, index) {
+            return index % 5 === 4;
+          });
+          return TotalArray.length;
+        }
+
+        function productCheckingDeal(
+          perPriceProduct,
+          valueTotalCounter,
+          nameAccount,
+          stateName
+        ) {
+          let santaCruzArray = Array.from({ length: valueTotalCounter }).fill(
+            perPriceProduct
+          );
+          let discountAvailabelAssociate = parseFloat(5 / 100).toFixed(2);
+          let discountAvailabelDiamond = parseFloat(20 / 100).toFixed(2);
+          let discountAvailabelPlatinum = parseFloat(15 / 100).toFixed(2);
+          let productPricing = 0;
+          let totalProductPricing = 0;
+          if (nameAccount === "associate") {
+            // Check if got deal for santaCruz
+            if (stateName === "SantaCruz") {
+              if ($("#santaCruz_totalCounter").val() >= 3) {
+                discountThreeforTwoDeals(santaCruzArray);
+                let santaArray = discountThreeforTwoDeals(santaCruzArray);
+                productPricing = santaCruzArray.length - santaArray;
+                productPricing = perPriceProduct * productPricing;
+                totalProductPricing = parseFloat(productPricing).toFixed(2);
+              } else {
+                productPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) *
+                  discountAvailabelAssociate;
+                totalProductPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) -
+                  productPricing;
+              }
+              return parseFloat(totalProductPricing).toFixed(2);
+            }
+          }
+          if (nameAccount === "diamond") {
+            // Check if got deal for Ironhide Cartridge
+            if (stateName === "IronCartridge") {
+              if ($("#ironhideCartridge_totalCounter").val() >= 3) {
+                discountThreeforTwoDeals(santaCruzArray);
+                let santaArray = discountThreeforTwoDeals(santaCruzArray);
+                productPricing = santaCruzArray.length - santaArray;
+                productPricing = perPriceProduct * productPricing;
+                totalProductPricing = parseFloat(productPricing).toFixed(2);
+              } else {
+                productPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) *
+                  discountAvailabelDiamond;
+                totalProductPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) -
+                  productPricing;
+              }
+              return parseFloat(totalProductPricing).toFixed(2);
+            }
+          }
+          if (nameAccount === "platinum") {
+            // Check if got deal for Ironhide Cartridge
+            if (stateName === "IronCartridge") {
+              if ($("#ironhideCartridge_totalCounter").val() >= 3) {
+                discountFiveforFourDeals(santaCruzArray);
+                let santaArray = discountFiveforFourDeals(santaCruzArray);
+                productPricing = santaCruzArray.length - santaArray;
+                productPricing = perPriceProduct * productPricing;
+                totalProductPricing = parseFloat(productPricing).toFixed(2);
+              } else {
+                productPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) *
+                  discountAvailabelPlatinum;
+                totalProductPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) -
+                  productPricing;
+              }
+              return parseFloat(totalProductPricing).toFixed(2);
+            }
+          }
+        }
+
+        function productCheckingNoDeal(
+          perPriceProduct,
+          valueTotalCounter,
+          nameAccount,
+          stateName
+        ) {
+          let discountAvailabelAssociate = parseFloat(5 / 100).toFixed(2);
+          let discountAvailabelDiamond = parseFloat(20 / 100).toFixed(2);
+          let discountAvailabelPlatinum = parseFloat(15 / 100).toFixed(2);
+          let productPricing = 0;
+          let totalProductPricing = 0;
+
+          //Associate
+          if (nameAccount === "associate") {
+            if (stateName === "FoxFloat") {
+              if ($("#foxfloat_totalCounter").val() > 0) {
+                productPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) *
+                  discountAvailabelAssociate;
+                totalProductPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) -
+                  productPricing;
+              } else {
+                totalProductPricing = 0.0;
+              }
+              return totalProductPricing;
+            }
+            if (stateName === "IronFloat") {
+              if ($("#ironhide_totalCounter").val() > 0) {
+                productPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) *
+                  discountAvailabelAssociate;
+                totalProductPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) -
+                  productPricing;
+              } else {
+                totalProductPricing = 0.0;
+              }
+              return totalProductPricing;
+            }
+            if (stateName === "Kone") {
+              if ($("#kone_totalCounter").val() > 0) {
+                productPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) *
+                  discountAvailabelAssociate;
+                totalProductPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) -
+                  productPricing;
+              } else {
+                totalProductPricing = 0.0;
+              }
+              return totalProductPricing;
+            }
+            if (stateName === "IronCartridge") {
+              if ($("#ironhideCartridge_totalCounter").val() > 0) {
+                productPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) *
+                  discountAvailabelAssociate;
+                totalProductPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) -
+                  productPricing;
+              } else {
+                totalProductPricing = 0.0;
+              }
+              return totalProductPricing;
+            }
+            if (stateName === "Shimano") {
+              if ($("#shimano_totalCounter").val() > 0) {
+                productPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) *
+                  discountAvailabelAssociate;
+                totalProductPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) -
+                  productPricing;
+              } else {
+                totalProductPricing = 0.0;
+              }
+              return totalProductPricing;
+            }
+          }
+
+          //Platinum
+          if (nameAccount === "platinum") {
+            if (stateName === "SantaCruz") {
+              if ($("#santaCruz_totalCounter").val() > 0) {
+                productPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) *
+                  discountAvailabelPlatinum;
+                totalProductPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) -
+                  productPricing;
+              } else {
+                totalProductPricing = 0.0;
+              }
+              return totalProductPricing;
+            }
+
+            if (stateName === "Kone") {
+              if ($("#kone_totalCounter").val() >= 5) {
+                let konePricing = 2888.99;
+                totalProductPricing = parseFloat(
+                  konePricing * valueTotalCounter
+                ).toFixed(2);
+              } else {
+                productPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) *
+                  discountAvailabelPlatinum;
+                totalProductPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) -
+                  productPricing;
+              }
+              return totalProductPricing;
+            }
+
+            if (stateName === "IronFloat") {
+              if ($("#ironhide_totalCounter").val() > 0) {
+                let ironPricing = 3000.0;
+                totalProductPricing = parseFloat(
+                  ironPricing * valueTotalCounter
+                ).toFixed(2);
+              } else {
+                totalProductPricing = 0.0;
+              }
+              return totalProductPricing;
+            }
+
+            if (stateName === "Shimano") {
+              if ($("#shimano_totalCounter").val() > 0) {
+                productPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) *
+                  discountAvailabelPlatinum;
+                totalProductPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) -
+                  productPricing;
+              } else {
+                totalProductPricing = 0.0;
+              }
+              return totalProductPricing;
+            }
+
+            if (stateName === "FoxFloat") {
+              if ($("#foxfloat_totalCounter").val() > 0) {
+                productPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) *
+                  discountAvailabelPlatinum;
+                totalProductPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) -
+                  productPricing;
+              } else {
+                totalProductPricing = 0.0;
+              }
+              return totalProductPricing;
+            }
+          }
+
+          //Diamond
+          if (nameAccount === "diamond") {
+            if (stateName === "SantaCruz") {
+              if ($("#santaCruz_totalCounter").val() > 0) {
+                productPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) *
+                  discountAvailabelDiamond;
+                totalProductPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) -
+                  productPricing;
+              } else {
+                totalProductPricing = 0.0;
+              }
+              return totalProductPricing;
+            }
+
+            if (stateName === "Kone") {
+              if ($("#kone_totalCounter").val() >= 3) {
+                let konePricing = 2588.99;
+                totalProductPricing = parseFloat(
+                  konePricing * valueTotalCounter
+                ).toFixed(2);
+              } else {
+                productPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) *
+                  discountAvailabelDiamond;
+                totalProductPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) -
+                  productPricing;
+              }
+              return totalProductPricing;
+            }
+
+            if (stateName === "IronFloat") {
+              if ($("#ironhide_totalCounter").val() > 0) {
+                let ironPricing = 2500.0;
+                totalProductPricing = parseFloat(
+                  ironPricing * valueTotalCounter
+                ).toFixed(2);
+              } else {
+                totalProductPricing = 0.0;
+              }
+              return totalProductPricing;
+            }
+
+            if (stateName === "Shimano") {
+              if ($("#shimano_totalCounter").val() > 0) {
+                productPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) *
+                  discountAvailabelDiamond;
+                totalProductPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) -
+                  productPricing;
+              } else {
+                totalProductPricing = 0.0;
+              }
+              return totalProductPricing;
+            }
+
+            if (stateName === "FoxFloat") {
+              if ($("#foxfloat_totalCounter").val() > 0) {
+                productPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) *
+                  discountAvailabelDiamond;
+                totalProductPricing =
+                  parseFloat(perPriceProduct * valueTotalCounter).toFixed(2) -
+                  productPricing;
+              } else {
+                totalProductPricing = 0.0;
+              }
+              return totalProductPricing;
+            }
+          }
+        }
+
+        function calculationProduct(nameAccount) {
+          //Price Kone Product
+          let perPricekone = 3488.99;
+          let perPriceSantaCruz = 185.5;
+          let perPriceironHide = 3299.99;
+          let perPriceFoxFloat = 66;
+          let perPriceironCartridge = 529.99;
+          let perPriceShimano = 67.6;
+          let totalPriceKone = 0;
+          let totalPriceSantaCruz = 0;
+          let totalPriceFoxFloat = 0;
+          let totalPriceIronFloat = 0;
+          let totalPriceironCartridge = 0;
+          let totalPriceShimano = 0;
+          let totalProduct = 0;
+
+          // For Associate Account
+          if (nameAccount === "associate") {
+            // For SantaCruz Product
+            totalPriceSantaCruz = productCheckingDeal(
+              perPriceSantaCruz,
+              $("#santaCruz_totalCounter").val(),
+              nameAccount,
+              "SantaCruz"
+            );
+            // For FoxFloat Product
+            totalPriceFoxFloat = productCheckingNoDeal(
+              perPriceFoxFloat,
+              $("#foxfloat_totalCounter").val(),
+              nameAccount,
+              "FoxFloat"
+            );
+            //For Ironhide Product
+            totalPriceIronFloat = productCheckingNoDeal(
+              perPriceironHide,
+              $("#ironhide_totalCounter").val(),
+              nameAccount,
+              "IronFloat"
+            );
+
+            //For Kone Product
+            totalPriceKone = productCheckingNoDeal(
+              perPricekone,
+              $("#kone_totalCounter").val(),
+              nameAccount,
+              "Kone"
+            );
+            //For ironCartridge Product
+            totalPriceironCartridge = productCheckingNoDeal(
+              perPriceironCartridge,
+              $("#ironhideCartridge_totalCounter").val(),
+              nameAccount,
+              "IronCartridge"
+            );
+            //For Shimano Product
+            totalPriceShimano = productCheckingNoDeal(
+              perPriceShimano,
+              $("#shimano_totalCounter").val(),
+              nameAccount,
+              "Shimano"
+            );
+
+            totalProduct =
+              Number(totalPriceSantaCruz) +
+              Number(totalPriceFoxFloat) +
+              Number(totalPriceIronFloat) +
+              Number(totalPriceKone) +
+              Number(totalPriceironCartridge) +
+              Number(totalPriceShimano);
+            return totalProduct;
+          }
+          // For Platinum Account
+          if (nameAccount === "platinum") {
+            //For ironCartridge Product
+            totalPriceironCartridge = productCheckingDeal(
+              perPriceironCartridge,
+              $("#ironhideCartridge_totalCounter").val(),
+              nameAccount,
+              "IronCartridge"
+            );
+            // For SantaCruz Product
+            totalPriceSantaCruz = productCheckingNoDeal(
+              perPriceSantaCruz,
+              $("#santaCruz_totalCounter").val(),
+              nameAccount,
+              "SantaCruz"
+            );
+            //For Kone Product
+            totalPriceKone = productCheckingNoDeal(
+              perPricekone,
+              $("#kone_totalCounter").val(),
+              nameAccount,
+              "Kone"
+            );
+            //For Ironhide Product
+            totalPriceIronFloat = productCheckingNoDeal(
+              perPriceironHide,
+              $("#ironhide_totalCounter").val(),
+              nameAccount,
+              "IronFloat"
+            );
+            //For Shimano Product
+            totalPriceShimano = productCheckingNoDeal(
+              perPriceShimano,
+              $("#shimano_totalCounter").val(),
+              nameAccount,
+              "Shimano"
+            );
+            // For FoxFloat Product
+            totalPriceFoxFloat = productCheckingNoDeal(
+              perPriceFoxFloat,
+              $("#foxfloat_totalCounter").val(),
+              nameAccount,
+              "FoxFloat"
+            );
+
+            totalProduct =
+              Number(totalPriceironCartridge) +
+              Number(totalPriceSantaCruz) +
+              Number(totalPriceKone) +
+              Number(totalPriceIronFloat) +
+              Number(totalPriceShimano) +
+              Number(totalPriceFoxFloat);
+            return totalProduct;
+          }
+          // For Diamond Account
+          if (nameAccount === "diamond") {
+            //For ironCartridge Product
+            totalPriceironCartridge = productCheckingDeal(
+              perPriceironCartridge,
+              $("#ironhideCartridge_totalCounter").val(),
+              nameAccount,
+              "IronCartridge"
+            );
+            // For SantaCruz Product
+            totalPriceSantaCruz = productCheckingNoDeal(
+              perPriceSantaCruz,
+              $("#santaCruz_totalCounter").val(),
+              nameAccount,
+              "SantaCruz"
+            );
+            //For Kone Product
+            totalPriceKone = productCheckingNoDeal(
+              perPricekone,
+              $("#kone_totalCounter").val(),
+              nameAccount,
+              "Kone"
+            );
+            //For Ironhide Product
+            totalPriceIronFloat = productCheckingNoDeal(
+              perPriceironHide,
+              $("#ironhide_totalCounter").val(),
+              nameAccount,
+              "IronFloat"
+            );
+            //For Shimano Product
+            totalPriceShimano = productCheckingNoDeal(
+              perPriceShimano,
+              $("#shimano_totalCounter").val(),
+              nameAccount,
+              "Shimano"
+            );
+            // For FoxFloat Product
+            totalPriceFoxFloat = productCheckingNoDeal(
+              perPriceFoxFloat,
+              $("#foxfloat_totalCounter").val(),
+              nameAccount,
+              "FoxFloat"
+            );
+
+            totalProduct =
+              Number(totalPriceironCartridge) +
+              Number(totalPriceSantaCruz) +
+              Number(totalPriceKone) +
+              Number(totalPriceIronFloat) +
+              Number(totalPriceShimano) +
+              Number(totalPriceFoxFloat);
+            return totalProduct;
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

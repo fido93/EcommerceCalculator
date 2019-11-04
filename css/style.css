@@ -1,0 +1,17 @@
+.counter {
+  display: flex;
+}
+
+.btn-custom {
+  background: #eeeeee;
+  border: 1px solid #eeeeee;
+  border-radius: 0px;
+  width: 58px;
+}
+
+.counter input.form-control {
+  width: 55px;
+  border-radius: 0px;
+  text-align: center;
+  margin: 0 8px;
+}
